@@ -17,18 +17,61 @@ body {
 nav {
   height: 100px;
   background: #F2F3F4;
+  li {
+      display: inline-block;
+      font-family: roboto;
+      margin: 10px;
+  }
+  a {
+    font-family: roboto;
+    color: #120204;
+    text-decoration: none;
+    padding: 15px 10px;
+    
+  }
 }
 
 #autumn {
+position: fixed;
   height: 100vh;
-  background-image: url(../images/autumn.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  opacity: .99;
+//   width: 100vw;
+//   background-image: url(../images/autumn.jpg);
+//   background-size: cover;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
   h1 {
     color: #F2F3F4;
     font-size: 40px;
     font-family: roboto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+}
+
+#aboutMe {
+    height: 100vh;
+    width: 100vw;
+    background: yellow;
+   
+}
+
+#portfolio {
+    height: 100vh;
+    width: 100vw;
+    background: red;
+}
+
+#contact {
+    height: 100vh;
+    width: 100vw;
+    background: blue;
+}
+
+footer {
+    height: 50px;
+    background: #F2F3F4;;
 }
